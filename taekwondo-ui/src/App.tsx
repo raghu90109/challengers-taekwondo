@@ -6,7 +6,7 @@ import AnnouncementBar from "./components/layout/AnnouncementBar";
 import Navbar from "./components/layout/Navbar";
 import Hero from "./components/hero/hero";
 import Programs from "./home/Programs";
-import Footer from "./components/layout/footer";
+import Footer from "./components/layout/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
