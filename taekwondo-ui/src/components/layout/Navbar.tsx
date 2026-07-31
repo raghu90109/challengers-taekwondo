@@ -1,38 +1,55 @@
+import { useState } from "react";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 import "./navbar.css";
 import Logo from "./logo";
 
+const menuItems = [
+  "Home",
+  "About",
+  "Programs",
+  "Gallery",
+  "Achievements",
+  "Contact",
+];
+
 export default function Navbar() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
-    <header className="header">
-      <nav className="navbar">
-        <Logo />
+    <header className="navbar">
+      <div className="container navbar-container">
+        <div className="navbar-left">
+          <Logo />
+        </div>
+        <nav className={`nav-links ${mobileMenuOpen ? "active" : ""}`}>
+          {menuItems.map((item) => (
+            <a
+              key={item}
+              href={`#${item.toLowerCase()}`}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {item}
+            </a>
+          ))}
 
-        <ul className="nav-menu">
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/">About</a>
-          </li>
-          <li>
-            <a href="/">Programs</a>
-          </li>
-          <li>
-            <a href="/">Gallery</a>
-          </li>
-          <li>
-            <a href="/">Branches</a>
-          </li>
-          <li>
-            <a href="/">Contact</a>
-          </li>
-        </ul>
+          <button className="login-btn mobile-only">Login</button>
 
-        <div className="nav-actions">
+          <button className="trial-btn mobile-only">Book Trial</button>
+        </nav>
+
+        <div className="nav-buttons desktop-only">
           <button className="login-btn">Login</button>
           <button className="trial-btn">Book Trial</button>
         </div>
-      </nav>
+
+        <button
+          className="menu-btn"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        >
+          {mobileMenuOpen ? <CloseIcon /> : <MenuIcon />}
+        </button>
+      </div>
     </header>
   );
 }

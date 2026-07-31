@@ -1,19 +1,21 @@
 .logo {
   display: flex;
+
   align-items: center;
+
   gap: 15px;
 }
-
-.logo-image {
-  width: 70px;
-  height: 70px;
-  object-fit: contain;
-}
-
 .logo-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.logo-image {
+  width: 70px;
+
+  height: 70px;
+
+  object-fit: contain;
 }
 
 .logo-title {
