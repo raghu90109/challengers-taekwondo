@@ -8,18 +8,11 @@ html {
   scroll-behavior: smooth;
 }
 
-body,
-#root {
-  font-family: "Poppins", sans-serif;
-  background: #ffffff;
-  color: #1f2937;
-  width: 100%;
-  min-height: 100%;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
+body {
+  font-family: Inter, Arial, sans-serif;
+  overflow-x: hidden;
+  background: #fff;
+  color: #111827;
 }
 
 img {
@@ -27,6 +20,14 @@ img {
   display: block;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
+}
+.container {
+  width: min(1280px, 92%);
+  margin: auto;
 }
