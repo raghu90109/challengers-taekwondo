@@ -11,7 +11,7 @@ export default function Logo() {
 
       <div className="logo-text">
         <div className="logo-title">CHALLENGERS</div>
-        <div className="logo-sub">TAEKWONDO</div>
+        <div className="logo-sub">FIGHT CLUB</div>
       </div>
     </div>
   );
