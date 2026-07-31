@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { ThemeProvider } from "@mui/material";
 import "./App.css";
 import theme from "./theme/theme";
@@ -9,8 +8,6 @@ import Programs from "./home/Programs";
 import Footer from "./components/layout/Footer";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <ThemeProvider theme={theme}>
       <AnnouncementBar />
