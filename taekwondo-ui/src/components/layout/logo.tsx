@@ -1,5 +1,5 @@
 import "../../styles/logo.css";
-import logo from "../../assets/logo/logo.png";
+import logo from "../../assets/logo/logo.jpeg";
 export default function Logo() {
   return (
     <div className="logo">
@@ -9,10 +9,10 @@ export default function Logo() {
         className="logo-image"
       />
 
-      <div className="logo-text">
+      {/* <div className="logo-text">
         <div className="logo-title">CHALLENGERS</div>
         <div className="logo-sub">FIGHT CLUB</div>
-      </div>
+      </div> */}
     </div>
   );
 }
