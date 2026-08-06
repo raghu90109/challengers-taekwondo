@@ -11,9 +11,9 @@
   justify-content: center;
 }
 .logo-image {
-  width: 70px;
+  width: 100px;
 
-  height: 70px;
+  height: 100px;
 
   object-fit: contain;
 }
