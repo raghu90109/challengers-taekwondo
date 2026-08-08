@@ -52,9 +52,9 @@ export default function Navbar() {
                 About Us
               </a>
 
-              <a href="/about/founder" onClick={closeMobileMenu}>
+              <Link to="/about/founder" onClick={closeMobileMenu}>
                 About Founder
-              </a>
+              </Link>
 
               <a href="#vision-mission" onClick={closeMobileMenu}>
                 Vision & Mission
