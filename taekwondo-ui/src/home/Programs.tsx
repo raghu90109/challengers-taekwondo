@@ -40,10 +40,7 @@ export default function Programs() {
   return (
     <section style={{ padding: "30px 0" }}>
       <Container>
-        <SectionTitle
-          subtitle="Our Programs"
-          title="Find the Right Training Program"
-        />
+        <SectionTitle subtitle="" title="Find the Right Training Program" />
 
         <div className="program-grid">
           {programs.map((program) => (
