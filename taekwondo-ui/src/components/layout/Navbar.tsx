@@ -52,7 +52,7 @@ export default function Navbar() {
                 About Us
               </a>
 
-              <a href="#about-founder" onClick={closeMobileMenu}>
+              <a href="/about/founder" onClick={closeMobileMenu}>
                 About Founder
               </a>
 
@@ -87,9 +87,9 @@ export default function Navbar() {
           </a>
 
           {/* CONTACT */}
-          <a href="#contact" onClick={closeMobileMenu}>
+          <Link to="/contact" onClick={closeMobileMenu}>
             Contact
-          </a>
+          </Link>
 
           {/* MOBILE BUTTONS */}
           <button className="login-btn mobile-only">Login</button>

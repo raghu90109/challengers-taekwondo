@@ -6,6 +6,8 @@ import Navbar from "./components/layout/Navbar";
 import Hero from "./components/hero/hero";
 import Programs from "./home/Programs";
 import Footer from "./components/layout/Footer";
+import AboutFounder from "./pages/AboutFounder";
+import Contact from "./pages/contact/Contact";
 
 function HomePage() {
   return (
@@ -30,9 +32,11 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/programs" element={<ProgramsPage />} />
+          <Route path="/about/founder" element={<AboutFounder />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
 
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </ThemeProvider>
   );

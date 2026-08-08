@@ -1,7 +1,7 @@
 export const academyContact = {
   academyName: "Challengers Taekwondo Academy",
 
-  phone: "+91 9110755434",
+  phone: "+91 90148 13378",
 
   email: "info@challengertkd.com",
 
@@ -13,6 +13,6 @@ export const academyContact = {
     facebook: "#",
     instagram: "#",
     youtube: "#",
-    whatsapp: "https://wa.me/919110755434",
+    whatsapp: "https://wa.me/919014813378",
   },
 };
