@@ -5,7 +5,6 @@ import theme from "./theme/theme";
 import Navbar from "./components/layout/Navbar";
 import Hero from "./components/hero/hero";
 import Programs from "./home/Programs";
-import Footer from "./components/layout/Footer";
 import AboutFounder from "./pages/AboutFounder";
 import Contact from "./pages/contact/Contact";
 
